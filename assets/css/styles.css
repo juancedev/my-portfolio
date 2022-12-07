@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/*font-family: 'Poppins', sans-serif;*/
+
+
+:root {
+    --main-color1: #1F213A;
+    --secondary-color1: #FACF0F;
+    --text-color1: #4B4B4D;
+    --white: #fff;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    border: 1px dotted red;
+}
+
+.nav-container {
+    display: flex;
+    padding-top: 20px;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    background-color: var(--secondary-color1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-right: 30px;
+    z-index: 9999;
+    align-self: flex-end;
+    transition: all 1s;
+    line-height: 30px;
+}
+
+nav label i {
+    color: black;
+}
+
+ul {
+    position: absolute;
+    background-color: #1f213ad7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding-top: 40px;
+    backdrop-filter: blur(5px);
+    transition: all 0.5s;
+}
+
+.jc-photo {
+    height: 147px;
+    width: 147px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+nav ul span {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 28px;
+}
+
+.icons-container {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+    font-size: 1.3rem;
+}
+
+.line {
+    background-color: #fff;
+    height: 3px;
+    width: 70%;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+#check:checked~div {
+    background-color: white;
+}
+
+.hero {
+    background-image: url(/assets/images/frontend-developer1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 740px;
+    padding-top: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__social-container {
+    display: none;
+}
+
+.hero-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.4rem;
+}
+
+.title span {
+    color: var(--secondary-color1);
+}
+
+.hero-text p {
+    font-size: 0.9rem;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.btn-container {
+    margin-top: 30px;
+    width: 85%;
+}
+
+.btn {
+    color: var(--main-color1);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 10px;
+    width: 130px;
+    height: 36px;
+}
+
+.uno {
+    border: 2px solid var(--secondary-color1);
+    background-color: var(--secondary-color1);
+}
+
+.dos {
+    background-color: #facf0f00;
+    border: 2px solid var(--secondary-color1);
+    color: var(--secondary-color1);
+}
+
+/*------> AWESOME SECTION <-------*/
+
+.awesome {
+    background-image: url(/assets/images/frontend-developer2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 740px;
+    padding-top: 50px;
+}
+
+.awesome h2 {
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+}
+
+.awesome h2 span {
+    font-size: 2.6rem;
+    line-height: 1;
+}
+
+.blurb-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 40px;
+    margin-top: 50px;
+}
+
+.blurb {
+    width: 40%;
+    text-align: center;
+}
+
+.blurb-image {
+    width: 66px;
+}
+
+.blurb-title {
+    margin-top: 10px;
+}
+
+
+/*------ MY SERVICES ------*/
+
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.services-title {
+    color: #1F213A;
+    margin-left: 1.5rem;
+}
+
+.underline {
+    width: 40px;
+    margin-left: 1.5rem;
+}
+
+.cards-slider {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    width: 180px;
+    height: 250px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    background-color: #1F213A;
+    padding-top: 25px;
+    padding-left: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.48);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #FACF0F;
+}
+
+.card-title {
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+/*------ HIRE ME ------*/
+
+.hire-me {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    width: 280px;
+    box-shadow: 6px 6px 0px 0px rgb(250, 15, 152);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hireme-title {
+    color: var(--main-color1);
+}
+
+.text-container img {
+    width: 40px;
+}
+
+.text {
+    margin-top: 20px;
+    color: #1F213A;
+    width: 90%;
+}
+
+#download-btn {
+    width: 180px;
+    margin-top: 30px;
+}
+
+/*------ MY SKILLS ------*/
+
+.skills {
+    background-color: var(--main-color1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 15px;
+}
+
+.bars-container {
+    width: 85%;
+}
+
+.skill-text {
+    border: 1px dotted green;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.skills-title {
+    margin-left: 1.5rem;
+}
+
+.skills img {
+    width: 40px;
+    margin-left: 1.5rem;
+}
+
+.skill-title {
+    font-weight: 500;
+}
+
+.bar {
+    background-color: #fff;
+    width: 100%;
+    height: 14px;
+    border-radius: 9px;
+}
+
+.progress-bar {
+    background-color: var(--secondary-color1);
+    width: 80%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.progress-bar.frontend {
+    width: 80%;
+}
+
+.progress-bar.web-design {
+    width: 90%;
+}
+
+.progress-bar.d-marketing {
+    width: 75%;
+}
+
+.progress-bar.email-marketing {
+    width: 85%;
+}
+
+.skills-buttons-container {
+    padding-top: 15px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills-buttons-container span {
+    padding: 4px 15px;
+    border: 1px solid var(--secondary-color1);
+    border-radius: 3px;
+    color: var(--secondary-color1);
+}
+
+
+/*------ PORTFOLIO ------ */
+
+
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-title {
+    color: var(--main-color1);
+    margin-left: 1.5rem;
+}
+
+.line {
+    width: 40px;
+    margin-left: 1.5rem;
+    margin-top: 10px;
+}
+
+.projects-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.project {
+    width: 45%;
+}
+
+.project img {
+    width: 100%;
+}
+
+/*------ FOOTER ------*/
+
+.footer {
+    padding: 20px;
+    background-color: var(--main-color1);
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .awesome h2 {
+        font-size: 1.3rem;
+        margin-left: 2.7rem;
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+
+
+    .awesome h2 {
+        margin-left: 4rem;
+    }
+
+    .services-title {
+        color: #1F213A;
+        margin-left: 4rem;
+    }
+
+    .underline {
+        margin-left: 4rem;
+    }
+
+    .skills-title {
+        margin-left: 4rem;
+    }
+
+    .skills .underline {
+        margin-left: 4rem;
+    }
+
+    .projects-container {
+        /*Cambiar esto*/
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 968px) {
+
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .bars-section {
+        width: 40%;
+    }
+
+    .bars-container {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .skills-buttons-container {
+        padding-top: 0;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .skills-buttons-container span {
+        padding: 4px 15px;
+        border: 1px solid var(--secondary-color1);
+        border-radius: 3px;
+        color: var(--secondary-color1);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .hero__social-container {
+        height: 180px;
+        font-size: 1.2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        left: 15px;
+        top: calc(50% - 90px);
+
+    }
+
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        width: 85%;
+    }
+
+    /*------ AWESOME------*/
+
+    .awesome {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .awesome h2 {
+        font-size: 3rem;
+        margin-left: 7rem;
+        margin-top: 50px;
+    }
+    
+    .awesome h2 span {
+        font-size: 9rem;
+        line-height: 0.5;
+        
+    }
+
+    .blurb-container {
+        width: 80%;
+        margin-top: 70px;
+        align-self: center;
+    }
+
+    .blurb {
+        width: 22%;
+    }
+
+    /*------ SERVICES ------*/
+
+    .services {
+        max-width: 1200px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .services-title {
+        color: #1F213A;
+        margin-left: 1.5rem;
+        font-size: 3rem;
+        margin-left: 7rem;
+    }
+
+    .underline {
+        margin-left: 7rem;
+    }
+
+    .cards-slider {
+        margin-left: 7rem;
+        margin-right: 7rem;
+        justify-content: space-between;
+    }
+
+    .card-container {
+        width: 300px;
+        height: 430px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+ 
+    .card-icon {
+        font-size: 2.5rem;
+        color: #FACF0F;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    /*------ HIRE ME------*/
+
+    .hire-me {
+        max-width: 1200px;
+        display: flex;
+    }
+
+    .me-container {
+        display: flex;
+        flex-direction: row;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .photo {
+        display: inline-block;
+        width: 350px;
+        order: 2;
+        box-shadow: 6px 6px 0px 0px rgba(250, 207, 15, 1);
+    }
+    
+    .text-container {
+        margin: 0;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .hireme-title {
+        color: var(--main-color1);
+        font-size: 3rem;
+        margin: 0;
+        align-self: flex-start;
+    }
+    
+    .text {
+        margin-top: 20px;
+        font-size: 1.1rem;
+        color: #1F213A;
+        width: 100%;
+    }
+
+    #download-btn {
+        margin-top: 50px;
+    }
+
+    /*------ SKILLS ------*/
+
+    .skills {
+        max-width: 1200px;
+    }
+
+    .skills-container {
+        margin-left: 7rem;
+        margin-right: 7rem;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+}
